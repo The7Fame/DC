@@ -455,6 +455,10 @@
   .main-slider__slide--2 {
     background-image: url("../img/new/2.png");
   }
+  
+  .about__list-item {
+    flex: 1 1 100%;
+  }
 }
 
 @media (max-width: 640px) {

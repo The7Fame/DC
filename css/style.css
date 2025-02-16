@@ -32,6 +32,12 @@ a {
   text-decoration: none;
 }
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 img {
   width: 100%;
 }
@@ -826,19 +832,7 @@ body {
   background-color: purple;
 }
 
-/*О нас*/
-.about {
-  padding: 80px 0 70px;
-  background-color: var(--color-white);
-}
 
-.about__title {
-  margin-bottom: 16px;
-}
-
-.about__descr {
-  max-width: 1080px;
-}
 
 /*Галерея*/
 .gallery {
@@ -1686,6 +1680,8 @@ body {
   padding: 62% 50px 43px;
   height: 100%;
   border: 1px solid var(--color-silver);
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   transition: border-color 0.3s ease-in-out;
 }
 
@@ -2324,4 +2320,93 @@ body {
 
 .footer__link:active .footer__icon path {
   fill: var(--color-purple);
+}
+
+/* О нас */
+.about {
+  padding: 80px 0 70px;
+  background-color: var(--color-white);
+}
+
+.about__title {
+  margin-bottom: 16px;
+}
+
+.about__descr {
+  max-width: 1080px;
+  margin-bottom: 20px;
+}
+
+.about__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+}
+
+.about__list-item {
+  min-width: 250px;
+  min-height: 205px;
+  padding: 116px 42px 10px 45px;
+  margin-bottom: 23px;
+  border-radius: 10px;
+  border: 1px solid var(--color-silver);
+  font-size: 18px;
+  transition: font-weight 0.2s ease-in-out; 
+  cursor: pointer;
+  flex: 1 1 calc(33.333% - 40px);
+  transition: font-weight 0.2s ease-in-out; 
+}
+
+.about__list-item:hover {
+  font-weight: 600;
+}
+
+.back-color {
+  background-color: var(--color-white);
+}
+
+.about__list-title {
+  padding-top: 35px;
+  padding-bottom: 12px;
+}
+
+.architectural-technical {
+  background: url(../img/new/2DDesing.svg) no-repeat;
+  background-size: 65px;
+  background-position: 45px 40px;
+}
+
+.consultation {
+  background: url(../img/new/Management.svg) no-repeat;
+  background-size: 65px;
+  background-position: 45px 40px;
+
+}
+
+.coordination {
+  background: url(../img/new/Design.svg) no-repeat;
+  background-size: 65px;
+  background-position: 45px 40px;
+
+}
+
+.management {
+  background: url(../img/new/Management2.svg) no-repeat;
+  background-size: 65px;
+  background-position: 45px 40px;
+
+}
+
+.digital {
+  background: url(../img/new/DigigtalConsultation.svg) no-repeat;
+  background-size: 65px;
+  background-position: 45px 40px;
+}
+
+.modelling {
+  background: url(../img/new/Modeling.svg) no-repeat;
+  background-size: 65px;
+  background-position: 45px 40px;
 }
