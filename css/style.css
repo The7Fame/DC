@@ -1634,7 +1634,7 @@ body {
 
 /*События*/
 .events {
-  padding: 40px 0;
+  padding: 10px 0 70px;
   background-color: var(--color-white);
 }
 
@@ -1682,7 +1682,6 @@ body {
   border: 1px solid var(--color-silver);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
-  transition: border-color 0.3s ease-in-out;
 }
 
 .article__img {
@@ -2346,16 +2345,21 @@ body {
 }
 
 .about__list-item {
+  cursor: pointer;
   min-width: 250px;
   min-height: 205px;
-  padding: 116px 42px 10px 45px;
+  padding: 116px 42px 10px 50px;
   margin-bottom: 23px;
   border-radius: 10px;
   border: 1px solid var(--color-silver);
   font-size: 18px;
-  transition: font-weight 0.2s ease-in-out; 
   flex: 1 1 calc(33.333% - 40px);
-  transition: color 0.2s ease-in-out; 
+  background-color: var(--color-white);
+  transition: box-shadow 0.3ms ease-in-out;
+}
+
+.about__list-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .back-color {
@@ -2405,3 +2409,89 @@ body {
   background-size: 65px;
   background-position: 45px 40px;
 }
+
+.team {
+  padding: 10px 0 70px;
+  background-color: var(--color-white);
+}
+
+.teams__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.teams__list-item {
+  cursor: pointer;
+  background-color: var(--color-white);
+  padding: 20px 50px;
+  margin-bottom: 23px;
+  border-radius: 10px;
+  border: 1px solid var(--color-silver);
+  width: 30%;
+  min-width: 250px;
+  transition: box-shadow 0.3ms ease-in-out;
+}
+
+.teams__list-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.teams__list-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 33px;
+}
+
+.teams-item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.descr {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+.projects__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.projects__list-item {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 20px 50px;
+  margin-bottom: 23px;
+  border-radius: 10px;
+  width: 30%;
+  min-width: 250px;
+  min-height: 200px;
+  border-radius: 10px;
+  border: 1px solid var(--color-silver);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.projects__list-item:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projects__list-item > h3 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: var(--color-black);
+}
+
+
