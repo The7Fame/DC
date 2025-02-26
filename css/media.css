@@ -452,6 +452,23 @@
 }
 
 @media (max-width: 768px) {
+  .team__content {
+    flex-direction: column; /* Одноколоночный макет на мобильных */
+    gap: 20px;
+  }
+
+  .team__photo, .team__list {
+      max-width: 100%; /* Полная ширина на мобильных */
+  }
+
+  .team__list-title {
+      font-size: 1.8rem;
+  }
+
+  .team__member {
+      font-size: 1rem;
+  }
+
   .main-slider__slide--1 {
     background-image: url("../img/new/1.png");
   }
