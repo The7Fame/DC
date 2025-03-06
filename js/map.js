@@ -1,5 +1,6 @@
 ymaps.ready(init);
 function init() {
+  console.log("HERE");
   let center = [53.335081, -6.265111];
 
   let my_map = new ymaps.Map(
