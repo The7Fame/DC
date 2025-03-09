@@ -1,15 +1,4 @@
-/*Главная*/
-let mainSwiper = new Swiper(".main-slider", {
-  wrapperClass: "main-slider__wrapper",
-  slideClass: "main-slider__slide",
-  loop: true,
-  autoplay: {
-    delay: 2000,
-  },
-});
-
-/*Сервисы*/
-let eventsSwiper = new Swiper(".services-slider", {
+let servicesSwiper = new Swiper(".services-slider", {
   wrapperClass: "services-slider__wrapper",
   slideClass: "services-slider__slide",
 

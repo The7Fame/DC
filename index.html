@@ -60,7 +60,7 @@
           </div>
         </div>
       </header>
-      <section class="hero">
+      <section class="hero" id="hero" style="flex-grow: 1;">
           <div class="main-slider">
             <div class="main-slider__wrapper">
               <div class="main-slider__slide main-slider__slide--1"></div>
@@ -77,9 +77,9 @@
             </div>
           </div>
         </section>
-      <main >
+      <main id="main" style="display: none;">
         
-        <section id="content" style="display: none;"></section>
+        <section id="content"></section>
 
       
       </main>
@@ -87,7 +87,7 @@
         <div class="footer">
           <div class="container">
             <div class="footer__content">
-              <a href="#">
+              <a href="/">
                 <p class="logo">DCAT-studio</p>
               </a>
               
@@ -103,13 +103,12 @@
           </div>
         </div>
       </footer>
-    <script src="./js/router.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey&lang=ru_RU"></script>
     <script src="./js/burger.js"></script>
-    <script src="./js/map.js"></script>
-    <script src="./js/my_swiper.js"></script>
-    <!-- <script src="./js/script.js"></script> -->
+
+    <script src="./js/swiper_hero.js"></script>
+    <script src="./js/router.js"></script>
     
   </body>
 </html>
