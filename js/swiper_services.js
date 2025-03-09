@@ -1,3 +1,15 @@
+const updateTabIndex = (swiper) => {
+  swiper.slides.forEach((slide) => {
+    const slideLinks = slide.querySelector(".article__link");
+    const isVisible = slide.classList.contains("swiper-slide-visible");
+
+    slide.tabIndex = isVisible ? "" : "-1";
+    if (slideLinks) {
+      slideLinks.tabIndex = isVisible ? "" : "-1";
+    }
+  });
+};
+
 let servicesSwiper = new Swiper(".services-slider", {
   wrapperClass: "services-slider__wrapper",
   slideClass: "services-slider__slide",
@@ -61,15 +73,3 @@ let servicesSwiper = new Swiper(".services-slider", {
     },
   },
 });
-
-const updateTabIndex = (swiper) => {
-  swiper.slides.forEach((slide) => {
-    const slideLinks = slide.querySelector(".article__link");
-    const isVisible = slide.classList.contains("swiper-slide-visible");
-
-    slide.tabIndex = isVisible ? "" : "-1";
-    if (slideLinks) {
-      slideLinks.tabIndex = isVisible ? "" : "-1";
-    }
-  });
-};
