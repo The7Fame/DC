@@ -585,7 +585,7 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-white);
+  background-color: var(--color-biloba);
   padding: 20px 50px;
   margin-bottom: 23px;
   width: 30%;
