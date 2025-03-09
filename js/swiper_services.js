@@ -51,30 +51,25 @@ let servicesSwiper = new Swiper(".services-slider", {
 
   watchSlidesProgress: true,
   slideVisibleClass: "swiper-slide-visible",
+
   on: {
     init: function () {
-      this.slides.forEach(function (slide) {
-        let slideLinks = slide.querySelector(".article__link");
-        if (!slide.classList.contains("swiper-slide-visible")) {
-          slide.tabIndex = "-1";
-          slideLinks.tabIndex = "-1";
-        } else {
-          slide.tabIndex = "";
-          slideLinks.tabIndex = "";
-        }
-      });
+      updateTabIndex(this);
     },
     slideChange: function () {
-      this.slides.forEach(function (slide) {
-        let slideLinks = slide.querySelector(".article__link");
-        if (!slide.classList.contains("swiper-slide-visible")) {
-          slide.tabIndex = "-1";
-          slideLinks.tabIndex = "-1";
-        } else {
-          slide.tabIndex = "";
-          slideLinks.tabIndex = "";
-        }
-      });
+      updateTabIndex(this);
     },
   },
 });
+
+const updateTabIndex = (swiper) => {
+  swiper.slides.forEach((slide) => {
+    const slideLinks = slide.querySelector(".article__link");
+    const isVisible = slide.classList.contains("swiper-slide-visible");
+
+    slide.tabIndex = isVisible ? "" : "-1";
+    if (slideLinks) {
+      slideLinks.tabIndex = isVisible ? "" : "-1";
+    }
+  });
+};
